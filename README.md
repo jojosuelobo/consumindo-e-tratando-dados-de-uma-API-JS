@@ -29,3 +29,37 @@ Quando você usa a palavra-chave `await` dentro de uma função assíncrona, voc
 Geralmente, você usa `await` com Promises, que são objetos especiais que representam resultados assíncronos, como fazer uma solicitação para um servidor ou ler um arquivo do disco.
 
 Usando `async` e `await`, você pode escrever código JavaScript mais fácil de ler e entender, lidando com tarefas assíncronas de forma mais eficiente.
+
+# **Fetch** 
+Em JavaScript, o `fetch` é como se você estivesse pedindo ao seu computador para pegar informações de algum lugar, como uma página da web ou um servidor. É como pedir para o seu computador buscar algo para você.
+
+Quando você usa o `fetch` em JavaScript, você pode especificar o endereço (URL) de onde deseja obter informações, como o endereço de um site ou de uma API (um serviço que fornece dados). O JavaScript então "estica os braços" e busca essas informações para você.
+
+Depois que o `fetch` busca as informações, ele retorna uma "promessa" (lembrando da explicação anterior sobre Promises) que representa a resposta da busca. Essa resposta pode conter diferentes tipos de informações, como texto, JSON (um formato comum de dados) ou até mesmo imagens.
+
+Você pode usar métodos especiais, como o `then()`, para tratar a resposta do `fetch`. Isso significa que você pode fazer algo específico quando a resposta é recebida, como exibir o texto no seu site, processar os dados JSON ou mostrar uma imagem.
+
+Em resumo, o `fetch` no contexto de JavaScript é como pedir ao seu computador para buscar informações de algum lugar, e depois você pode usar essas informações de várias maneiras para fazer coisas interessantes com o seu código.
+Exemplo de métudo e estrutura FETCH
+`
+fetch('http://localhost:4000/jsonform', { 
+  method: 'POST', 
+  headers: { 
+    'Content-Type': 'application/json' 
+  }, 
+  body:
+  JSON.stringify({ 
+    JsonName: jsonName, 
+    OriginalValues: originalJson, 
+    NewValues: newJson 
+  }), 
+}) 
+.then(response => response.json()) 
+.then(data => { 
+  console.log('Success:', data); 
+  alert("Formulário Criado Com Sucesso");
+}) 
+.catch((error) => { 
+  console.error('Error:', error); alert("Erro ao Criar Formulário");
+});
+`
