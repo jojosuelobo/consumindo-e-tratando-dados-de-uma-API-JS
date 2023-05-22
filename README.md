@@ -40,7 +40,8 @@ Depois que o `fetch` busca as informações, ele retorna uma "promessa" (lembran
 Você pode usar métodos especiais, como o `then()`, para tratar a resposta do `fetch`. Isso significa que você pode fazer algo específico quando a resposta é recebida, como exibir o texto no seu site, processar os dados JSON ou mostrar uma imagem.
 
 Em resumo, o `fetch` no contexto de JavaScript é como pedir ao seu computador para buscar informações de algum lugar, e depois você pode usar essas informações de várias maneiras para fazer coisas interessantes com o seu código.
-Exemplo de métudo e estrutura FETCH
+
+*Exemplo de métudo e estrutura FETCH*
 ```
 fetch('http://localhost:4000/jsonform', { 
   method: 'POST', 
