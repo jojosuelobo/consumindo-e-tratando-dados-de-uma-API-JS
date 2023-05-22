@@ -41,7 +41,7 @@ Você pode usar métodos especiais, como o `then()`, para tratar a resposta do `
 
 Em resumo, o `fetch` no contexto de JavaScript é como pedir ao seu computador para buscar informações de algum lugar, e depois você pode usar essas informações de várias maneiras para fazer coisas interessantes com o seu código.
 Exemplo de métudo e estrutura FETCH
-`
+```
 fetch('http://localhost:4000/jsonform', { 
   method: 'POST', 
   headers: { 
@@ -62,4 +62,4 @@ fetch('http://localhost:4000/jsonform', {
 .catch((error) => { 
   console.error('Error:', error); alert("Erro ao Criar Formulário");
 });
-`
+```
