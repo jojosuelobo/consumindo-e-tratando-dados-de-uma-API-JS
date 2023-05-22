@@ -30,6 +30,15 @@ Geralmente, você usa `await` com Promises, que são objetos especiais que repre
 
 Usando `async` e `await`, você pode escrever código JavaScript mais fácil de ler e entender, lidando com tarefas assíncronas de forma mais eficiente.
 
+*Exemplo de métudo e estrutura ASYNC e AWAIT*
+```
+async function getBuscarLivrosDaApi(){
+    const res = await fetch(endpointDaApi)
+    livros = await res.json()
+    console.log(livros)
+}
+```
+
 # **Fetch** 
 Em JavaScript, o `fetch` é como se você estivesse pedindo ao seu computador para pegar informações de algum lugar, como uma página da web ou um servidor. É como pedir para o seu computador buscar algo para você.
 
